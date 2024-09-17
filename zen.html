@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="zen.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="todo.html">To-Do List</a>
+        <a href="habit.html">Habit Tracker</a>
+        <a href="zen.html">Zen Mode</a>
+    </div>
+    <div id="zen" class="zen-mode">
+        <div class="timer-container">
+            <div id="timer">25:00</div>
+            <div class="circle-ring"></div>
+        </div>
+        <div id="quote"></div>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+</body>
+</html>

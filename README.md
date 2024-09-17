@@ -6,7 +6,7 @@ A simple and efficient web-based **Task Manager** to organize tasks, track habit
 ## Features
 - ✅ **To-do List**: Add, mark, delete tasks & set priorities.
 - 📅 **Habit Tracker**: Visualize progress with a calendar and Gantt chart.
-- 🧘‍♂️ **Zen Mode**: Focus timer + motivational quotes from the Bhagavad Gita.
+- 🧘‍♂️ **Zen Mode**: Focus timer + motivational quotes.
 - 🎨 **Welcome Screen**: Beautiful, user-friendly design.
 
 ## Tech Stack

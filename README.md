@@ -15,6 +15,6 @@ A streamlined web-based **Task Manager** designed to efficiently organize tasks,
 
 ---
 
-![✅ To-do List](images/To-D0-list.png)
-![☯️ Zen Mode](images/Zen-mode.png)
-![📅 Habit Tracker](images/Gantt-chart.png)
+![](images/To-D0-list.png)
+![](images/Zen-mode.png)
+![](images/Gantt-chart.png)

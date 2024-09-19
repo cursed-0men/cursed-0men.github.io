@@ -9,82 +9,55 @@
 </head>
 <body>
     <div class="task-manager">
-        <!-- Left bar -->
+        <!-- Left bar with navigation buttons -->
         <div class="left-bar">
             <ul>
-                <li><i class="icon">📂</i>Inbox</li>
-                <li><i class="icon">⭐</i>Today</li>
-                <li><i class="icon">📅</i>Upcoming</li>
-                <li><i class="icon">⚠️</i>Important</li>
-                <li><i class="icon">📅</i>Meetings</li>
-                <li><i class="icon">🗑️</i>Trash</li>
-                <li><i class="icon">👪</i>Family</li>
-                <li><i class="icon">🌞</i>Vacation</li>
-                <li><i class="icon">🔥</i>Festival</li>
-                <li><i class="icon">⚡</i>Concerts</li>
+                <li><a href="zen-mode.html"><i class="icon">🧘</i> Zen Mode</a></li>
+                <li><a href="habit-tracker.html"><i class="icon">📅</i> Habit Tracker</a></li>
             </ul>
         </div>
 
         <!-- Page content -->
         <div class="page-content">
-            <!-- Welcome Screen Section -->
-            <div class="welcome-screen">
-                <div class="header">Welcome to Your Task Manager</div>
-                <p>Let's make today productive and enjoyable!</p>
-                <a href="zen-mode.html" class="feature-link">🧘 Zen Mode</a>
-                <a href="habit-tracker.html" class="feature-link">📅 Habit Tracker</a>
+            <!-- Add Task Section -->
+            <div class="add-task-section">
+                <input type="text" id="new-task-input" placeholder="Enter new task">
+                <select id="priority-select">
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+                <button id="add-task-button">Add Task</button>
             </div>
 
-            <!-- Today's tasks -->
-            <div class="header">Today's tasks</div>
+            <!-- Completed Tasks Filter -->
+            <div class="filter-section">
+                <label for="filter-select">Filter Tasks:</label>
+                <select id="filter-select" onchange="filterTasks()">
+                    <option value="all">All Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                </select>
+            </div>
+
+            <!-- Task List Section -->
+            <div class="header">Today's Tasks</div>
             <div class="tasks">
-                <div class="task-item">
-                    <span>Dashboard design implementation</span>
-                    <span class="status">Approved</span>
-                </div>
-                <div class="task-item">
-                    <span>Create a Userflow</span>
-                    <span class="status">In Progress</span>
-                </div>
-                <div class="task-item">
-                    <span>App implementation</span>
-                    <span class="status">In Review</span>
-                </div>
-                <div class="task-item">
-                    <span>PlantWise UI</span>
-                    <span class="status">In Progress</span>
-                </div>
-                <div class="task-item">
-                    <span>Create a Web Application</span>
-                    <span class="status">Approved</span>
-                </div>
-                <div class="task-item">
-                    <span>Interactive Design</span>
-                    <span class="status">In Review</span>
-                </div>
+                <!-- Task items go here -->
             </div>
 
-            <!-- Upcoming tasks -->
-            <div class="upcoming-tasks">
-                <div class="header">Upcoming Tasks</div>
-                <div class="task-item">
-                    <span>Dashboard Design implementation</span>
-                    <span class="status">Waiting</span>
-                </div>
-                <div class="task-item">
-                    <span>Create a Userflow</span>
-                    <span class="status">Waiting</span>
-                </div>
-                <div class="task-item">
-                    <span>App implementation</span>
-                    <span class="status">Waiting</span>
-                </div>
-                <div class="task-item">
-                    <span>PlantWise UI</span>
-                    <span class="status">Waiting</span>
+            <!-- Completion Ring Section -->
+            <div class="completion-ring-section">
+                <div class="completion-ring-container">
+                    <svg class="completion-ring" width="120" height="120">
+                        <circle class="ring-background" cx="60" cy="60" r="50"></circle>
+                        <circle class="ring-progress" cx="60" cy="60" r="50"></circle>
+                        <text x="60" y="60" text-anchor="middle" dy=".3em" class="completion-text">0%</text>
+                    </svg>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="task-manager.js"></script>
 </body>
 </html>

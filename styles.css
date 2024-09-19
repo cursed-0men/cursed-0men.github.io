@@ -1,185 +1,169 @@
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f8;
-  }
-  
-  .task-manager {
-      display: flex;
-      height: 100vh;
-  }
-  
-  .left-bar {
-      width: 250px;
-      background-color: #2f3b52;
-      color: #fff;
-      padding: 20px;
-  }
-  
-  .left-bar ul {
-      list-style-type: none;
-      padding: 0;
-  }
-  
-  .left-bar li {
-      padding: 10px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-  }
-  
-  .left-bar li a {
-      color: #fff;
-      text-decoration: none;
-  }
-  
-  .left-bar .icon {
-      margin-right: 10px;
-  }
-  
-  .page-content {
-      flex-grow: 1;
-      padding: 20px;
-      overflow-y: auto;
-      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-      border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-  }
-  
-  .header {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #333;
-  }
-  
-  .tasks, .upcoming-tasks {
-      margin-bottom: 30px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .task-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-  }
-  
-  .status {
-      color: #666;
-  }
-  
-  .feature-link {
-      display: block;
-      margin: 10px 0;
-      padding: 10px 20px;
-      background-color: #6c63ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      text-align: center;
-  }
-  
-  .feature-link:hover {
-      background-color: #4e4bc9;
-  }
-  
-  /* Habit Tracker Section */
-  body {
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
-  }
-  
-  .page-content {
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-      padding: 30px;
-      margin-top: 20px;
-  }
-  
-  .habit-tracker {
-      background: #f4f6fb; /* Light background for the habit tracker */
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .habit-tracker .header {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #333; /* Fallback color */
-      text-align: center;
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-  }
-  
-  /* Additional styles for a shadow effect */
-  .habit-tracker .header::before {
-      content: attr(data-text);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      z-index: -1;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-      display: block;
-      line-height: 1;
-  }
-  
-  
-  .calendar, .gantt-chart {
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 12px;
-      background: #ffffff;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .calendar::before, .gantt-chart::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      z-index: 0;
-      transition: opacity 0.3s;
-  }
-  
-  .calendar:hover::before, .gantt-chart:hover::before {
-      opacity: 0;
-  }
-  
-  .calendar:hover, .gantt-chart:hover {
-      transform: scale(1.02);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .calendar p, .gantt-chart p {
-      position: relative;
-      z-index: 1;
-      font-size: 1.2rem;
-      color: #666;
-  }
-  
-  /* Zen Mode Section */
-  /* Zen Mode Section */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+}
+
+.task-manager {
+    display: flex;
+    height: 100vh;
+}
+
+.left-bar {
+    width: 250px;
+    background-color: #2f3b52;
+    color: #fff;
+    padding: 20px;
+}
+
+.left-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-bar li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.left-bar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-bar .icon {
+    margin-right: 10px;
+}
+
+.page-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-task-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#new-task-input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#priority-select, #add-task-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+}
+
+#add-task-button:hover {
+    background-color: #4e4bc9;
+}
+
+.tasks {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-name {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.status {
+    width: 100px;
+    color: #666;
+    text-align: center;
+}
+
+.priority {
+    width: 100px;
+    color: #333;
+    text-align: center;
+}
+
+.complete-task, .delete-task {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.delete-task {
+    background-color: #f44336;
+}
+
+.complete-task:hover, .delete-task:hover {
+    opacity: 0.8;
+}
+
+/* Completion Ring Styles */
+.completion-ring-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing from the task list */
+}
+
+.completion-ring {
+    /* No rotation applied */
+}
+
+.ring-background {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 10;
+}
+
+.ring-progress {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 10;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 0.5s;
+}
+
+.completion-text {
+    font-size: 1.5rem;
+    fill: #333;
+}
+ /* Zen Mode Section */
   .zen-mode {
       display: flex;
       flex-direction: column;
@@ -243,46 +227,44 @@ body {
   .motivational-quotes p {
       margin: 5px 0;
   }
-  
-  /* Sidebar Icons */
-  .sidebar ul {
-      list-style-type: none;
-      padding: 0;
-  }
-  
-  .sidebar li {
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-      color: #ffffff;
-  }
-  
-  .sidebar li img {
-      margin-right: 10px;
-  }
-  
-  /* Additional Features Links */
-  .additional-features {
-      margin-top: 50px;
-  }
-  
-  .additional-features ul {
-      list-style-type: none;
-      padding: 0;
-  }
-  
-  .additional-features li {
-      margin: 10px 0;
-  }
-  
-  .additional-features a {
-      text-decoration: none;
-      color: #1e90ff;
-      font-size: 1.2rem;
-  }
-  
-  .additional-features a:hover {
-      text-decoration: underline;
-  }
-  
-  
+
+  /* Existing styles... */
+
+/* Filter Section Styles */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px; /* Adjust spacing from the task list */
+}
+
+#filter-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Task List Section Styles */
+.header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tasks {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Completion Ring Section Styles */
+.completion-ring-section {
+    margin-top: 20px; /* Adjust spacing from the task list */
+}
+

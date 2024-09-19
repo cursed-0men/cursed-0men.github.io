@@ -1,18 +1,20 @@
 # 📝 Task Manager
 
 ## Overview
-A simple and efficient web-based **Task Manager** to organize tasks, track habits, and boost productivity with a focused **Zen Mode**.
+A streamlined web-based **Task Manager** designed to efficiently organize tasks, track habits, and enhance productivity with an immersive **Zen Mode**.
 
 ## Features
-- ✅ **To-do List**: Add, mark, delete tasks & set priorities.
-- 📅 **Habit Tracker**: Visualize progress with a calendar and Gantt chart.
-- 🧘‍♂️ **Zen Mode**: Focus timer + motivational quotes.
-- 🎨 **Welcome Screen**: Beautiful, user-friendly design.
+- ✅ **To-do List**: Add, mark, and delete tasks with priority settings.
+- 📅 **Habit Tracker**: Track progress through an intuitive calendar and Gantt chart.
+- 🧘‍♂️ **Zen Mode**: A focus timer complemented by motivational quotes.
+- 🎨 **Welcome Screen**: A visually stunning and user-friendly introduction.
 
 ## Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap
 - **Backend**: Node.js, Express.js, MongoDB
---
-![✅](images/To-D0-list.png)
-![☯️](images/Zen-mode.png)
-![📅](images/Gantt-chart.png)
+
+---
+
+![✅ To-do List](images/To-D0-list.png)
+![☯️ Zen Mode](images/Zen-mode.png)
+![📅 Habit Tracker](images/Gantt-chart.png)

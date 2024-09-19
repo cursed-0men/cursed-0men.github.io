@@ -12,7 +12,7 @@ A simple and efficient web-based **Task Manager** to organize tasks, track habit
 ## Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap
 - **Backend**: Node.js, Express.js, MongoDB
-
-![To-Do List](images/To-D0-list.png)
-![Zen Mode](images/Zen-mode.png)
-![Gantt chart](images/Gantt-chart.png)
+--
+![✅](images/To-D0-list.png)
+![☯️](images/Zen-mode.png)
+![📅](images/Gantt-chart.png)

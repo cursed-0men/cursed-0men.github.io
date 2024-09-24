@@ -5,10 +5,10 @@ Welcome to the **Task Manager App**! This application helps you manage your task
 ## 🌟 Features
 
 - **📋 Task Management**: Add, delete, and mark tasks as complete. 
-- **Priority Selection**: Assign priority levels to tasks for better organization. 📊
-- **Completion Ring**: Visual representation of your task completion percentage. 🎯
-- **Zen Mode**: Focus on your tasks with a Pomodoro timer and motivational quotes. ⏳
-- **Google Calendar Integration**: Seamlessly sync your tasks and habits with Google Calendar for better planning. 📅
+- **📊Priority Selection**: Assign priority levels to tasks for better organization. 
+- **🎯Completion Ring**: Visual representation of your task completion percentage. 
+- **⏳Zen Mode**: Focus on your tasks with a Pomodoro timer and motivational quotes. 
+- **📅Google Calendar Integration**: Seamlessly sync your tasks and habits with Google Calendar for better planning. 
 
 ## 🔑 Google API Integration
 

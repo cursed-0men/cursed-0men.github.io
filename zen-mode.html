@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Mode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="task-manager">
+        <div class="left-bar">
+            <ul>
+                <li><a href="index.html"><i class="icon">🏠</i> Home</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="zen-mode">
+                <div class="header">Zen Mode</div>
+                <div class="pomodoro-timer">
+                    <div id="timer">60:00</div>
+                    <div class="controls">
+                        <button onclick="startTimer()">Start</button>
+                        <button onclick="pauseTimer()">Pause</button>
+                        <button onclick="resetTimer()">Reset</button>
+                    </div>
+                </div>
+                <div class="motivational-quotes">
+                    <p id="quote-text">“You have the right to work, but never to the fruit of work.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="zen-mode.js"></script>
+</body>
+</html>

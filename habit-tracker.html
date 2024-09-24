@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css" rel="stylesheet" />
+    <link href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css" rel="stylesheet" />
+    <style>
+        /* Basic styling for calendar and Gantt chart */
+        #calendar, #gantt {
+            width: 100%;
+            height: 500px; /* Adjust as needed */
+        }
+        .calendar, .gantt-chart {
+            margin-top: 20px; /* Space between sections */
+        }
+    </style>
+</head>
+<body>
+    <div class="task-manager">
+        <div class="left-bar">
+            <ul>
+                <li><a href="/index.html"><i class="icon">🏠</i> Home</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="habit-tracker">
+                <div class="header">Habit Tracker</div>
+                <div class="controls">
+                    <button id="add-habit">Add Habit</button>
+                    <button id="view-calendar">View Calendar</button>
+                    <button id="view-gantt">View Gantt Chart</button>
+                </div>
+                <div id="calendar-view" class="calendar" style="display: none;">
+                    <div id="calendar"></div>
+                </div>
+                <div id="gantt-chart-view" class="gantt-chart" style="display: none;">
+                    <div id="gantt"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/habit-tracker.js"></script>
+    <script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Correct path -->
+</head>
+<body>
+    <div class="task-manager">
+        <div class="left-bar">
+            <ul>
+                <li><a href="zen-mode.html"><i class="icon">🧘</i> Zen Mode</a></li>
+                <li><a href="habit-tracker.html"><i class="icon">📅</i> Habit Tracker</a></li>
+            </ul>
+        </div>
+
+        <div class="page-content">
+            <div class="add-task-section">
+                <input type="text" id="new-task-input" placeholder="Enter new task">
+                <select id="priority-select">
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+                <button id="add-task-button">Add Task</button>
+            </div>
+
+            <div class="filter-section">
+                <label for="filter-select">Filter Tasks:</label>
+                <select id="filter-select" onchange="filterTasks()">
+                    <option value="all">All Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                </select>
+            </div>
+
+            <div class="header">Today's Tasks</div>
+            <div class="tasks"></div>
+
+            <div class="completion-ring-section">
+                <div class="completion-ring-container">
+                    <svg class="completion-ring" width="120" height="120">
+                        <circle class="ring-background" cx="60" cy="60" r="50"></circle>
+                        <circle class="ring-progress" cx="60" cy="60" r="50"></circle>
+                        <text x="60" y="60" text-anchor="middle" dy=".3em" class="completion-text">0%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="task-manager.js"></script> <!-- Correct path -->
+</body>
+</html>

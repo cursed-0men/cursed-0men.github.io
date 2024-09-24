@@ -32,7 +32,7 @@ To ensure the security of your Google API credentials:
 
 1. Clone this repository: 
    ```bash
-   git clone https://github.com/yourusername/task-manager.git
+   git clone https://github.com/cursed-0men/task-manager.git
    
 
 ## 📖 **Documentation**

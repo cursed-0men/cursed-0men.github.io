@@ -33,3 +33,54 @@ To ensure the security of your Google API credentials:
 1. Clone this repository: 
    ```bash
    git clone https://github.com/yourusername/task-manager.git
+   
+
+## 📖 **Documentation**
+
+For more details on how to use the app, check the in-app instructions or visit the [Google Calendar API documentation](https://developers.google.com/calendar). Here are some key points:
+
+- **Task Management**: Easily add tasks with names and priority levels. Tasks can be marked as complete or deleted as needed.
+- **Zen Mode**: Engage in focused work sessions using the Pomodoro timer. Start, pause, or reset your timer as required.
+- **Google Calendar Integration**: Tasks added to the application automatically sync with your Google Calendar. You can view your tasks alongside your other scheduled events.
+- **Notifications**: Stay informed with email notifications for any new tasks or habits added to your Google Calendar.
+
+### 📝 Setup Instructions for Google API
+
+1. **Create a Google Cloud Project**:
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Create a new project.
+
+2. **Enable the Google Calendar API**:
+   - In the APIs & Services dashboard, click on "Enable APIs and Services."
+   - Search for "Google Calendar API" and enable it for your project.
+
+3. **Create Credentials**:
+   - Navigate to the "Credentials" tab.
+   - Click "Create Credentials" and choose "OAuth client ID."
+   - Configure the consent screen and set the application type as "Web application."
+   - Add authorized redirect URIs as needed (e.g., `http://localhost:3000` for local testing).
+   - Download the credentials JSON file and save it securely.
+
+4. **Set Up Environment Variables**:
+   - Create a `.env` file in the project root.
+   - Add your Google API credentials in the following format:
+     ```
+     GOOGLE_CLIENT_ID=your_client_id
+     GOOGLE_CLIENT_SECRET=your_client_secret
+     ```
+
+5. **Follow the instructions in `zen-mode.js`** to configure the application to use your credentials.
+
+---
+
+## 🙌 **Contributing**
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these guidelines:
+
+1. **Fork the repository**:
+   - Click on the "Fork" button at the top right of the repository page.
+
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+

@@ -73,6 +73,31 @@ For more details on how to use the app, check the in-app instructions or visit t
 
 ---
 
+## 🚀 How to Run the Project
+
+### 📋 Install Prerequisites
+
+
+- 🟢 **Node.js** (v12 or higher)
+- 🛠 **npm** (Node package manager)
+- 🔑 **Google API credentials** (OAuth2 client credentials from the [Google Developer Console](https://console.cloud.google.com/))
+
+### 🛠 Steps to Run the Code:
+
+1. 🖥 **Clone the repository** 
+2. 📦 ️**Install dependencies** ️
+3. ▶️ **Run server.js** ️
+    ```bash
+    node server.js
+    ```
+4. 🌎 **Open browser, Go to**
+    ```bash
+    http://localhost:3000/login.html
+    ```
+
+
+---
+
 ## 🙌 **Contributing**
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these guidelines:
